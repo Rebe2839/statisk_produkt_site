@@ -1,0 +1,214 @@
+.breadcrumbs {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  margin: 20px;
+  font-size: 1.2rem;
+
+  list-style-type: none;
+}
+
+.breadcrumbs a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+.breadcrumbs a:hover {
+  text-decoration-color: #777777;
+  font-style: italic;
+}
+.sahara_shirt {
+  margin-left: 100px;
+}
+
+.grid_1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.info_box {
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+
+  background-color: rgb(215, 203, 175);
+
+  border-radius: 10px;
+  margin-left: 10%;
+  padding: 20px;
+  width: 70%;
+  height: 430px;
+}
+
+.price {
+  font-size: 1.2rem;
+  font-style: italic;
+  margin-top: 20px;
+}
+
+select {
+  min-width: 100px;
+  margin-left: 10px;
+  padding: 10px;
+  font-size: 1rem;
+  border: 2px solid rgb(65, 58, 46);
+  border-radius: 10px;
+  color: rgb(65, 58, 46);
+  height: 40px;
+  background-color: rgb(227, 220, 202);
+}
+
+.info_box p {
+  font-weight: bold;
+}
+/*
+.info_box {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+  
+    background-color: rgb(215, 203, 175);
+  
+    border-radius: 10px;
+  
+    padding: 20px;
+    width: 50%;
+    height: 300px;
+    margin-top: 500px;
+    margin-left: -100px;
+  }
+*/
+.info_box button {
+  display: block;
+  margin-top: 10px;
+  width: 40%;
+  padding: 8px;
+  margin-inline: auto;
+  border: 2px solid rgb(65, 58, 46);
+  border-radius: 10px;
+  color: rgb(65, 58, 46);
+  background-color: rgb(227, 220, 202);
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+.information {
+  padding: 20px;
+  background-color: rgba(215, 203, 175, 0.486);
+  width: 42%;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin-left: 100px;
+
+  border-radius: 40px;
+}
+
+.information h2 {
+  padding-top: 40px;
+  padding-bottom: 20px;
+  font-size: 3rem;
+}
+
+.information dt {
+  padding-top: 15px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.information dd {
+  padding-left: 15px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  font-size: 1rem;
+  font-style: italic;
+}
+
+@media (max-width: 1200px) {
+  .info_box {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+
+    border-radius: 10px;
+
+    padding: 20px;
+    width: 50%;
+    height: 350px;
+    margin-top: 500px;
+    margin-left: -100px;
+  }
+
+  .price {
+    margin-top: 10px;
+  }
+
+  .info_box button {
+    display: block;
+    margin-top: 0px;
+    width: 60%;
+    padding: 8px;
+    margin-inline: auto;
+  }
+}
+
+@media (max-width: 1000px) {
+  .grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .sahara_shirt {
+    margin-left: 20px;
+  }
+  .info_box {
+    padding: 20px;
+    width: auto;
+    height: auto;
+    max-width: 650px;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .info_box button {
+    display: block;
+    margin-top: 20px;
+    width: 20%;
+    padding: 8px;
+    margin-inline: auto;
+  }
+
+  .information {
+    padding: 20px;
+    background-color: rgba(215, 203, 175, 0.486);
+    width: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    max-width: 650px;
+    border-radius: 40px;
+  }
+}
+
+@media (max-width: 650px) {
+  .sahara_shirt {
+    margin-left: 5px;
+  }
+  .info_box {
+    padding: 20px;
+
+    height: auto;
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+  .breadcrumbs {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    margin: 5px;
+    font-size: 0.8rem;
+
+    list-style-type: none;
+  }
+}

@@ -1,0 +1,57 @@
+h2 {
+  font-size: 4rem;
+  text-align: start;
+  margin: 40px;
+}
+
+.categories {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  list-style-type: none;
+  background-color: rgba(215, 203, 175, 0.486);
+  padding-bottom: 50px;
+  list-style-position: inside;
+  padding: 50px;
+  margin-top: 50px;
+  margin-bottom: 200px;
+}
+
+.categories_text {
+  display: flex;
+  flex-direction: column;
+}
+
+.categories_text2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.categories a {
+  font-size: 2rem;
+}
+.categories a:hover {
+  font-style: italic;
+}
+
+.apparel,
+.footwear,
+.accessories,
+.sporting_goods,
+.free_items,
+.personal_care {
+  border-bottom: 1px solid rgb(65, 58, 46);
+  padding-top: 40px;
+}
+
+@media (max-width: 650px) {
+  .categories a {
+    font-size: 1.5rem;
+  }
+
+  .categories {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0px;
+  }
+}
