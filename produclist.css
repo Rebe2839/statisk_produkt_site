@@ -28,14 +28,14 @@ h2 {
 }
 
 select {
-  min-width: 100px;
+  min-width: 200px;
   margin-top: 20px;
   margin-left: 10px;
 
   padding: 10px;
   font-size: 1rem;
   border: 2px solid rgb(65, 58, 46);
-  border-radius: 5px;
+  border-radius: 0px;
   color: rgb(65, 58, 46);
   height: 45px;
   background-color: rgb(227, 220, 202);
@@ -43,7 +43,7 @@ select {
 
 .top_grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   margin-left: 5%;
 }
 

@@ -42,7 +42,7 @@
   margin-left: 10%;
   padding: 20px;
   width: 70%;
-  height: 430px;
+  height: 450px;
 }
 
 .brandbio,
@@ -150,13 +150,14 @@ h3 {
 
     padding: 20px;
     width: 50%;
-    height: 350px;
+    height: auto;
     margin-top: 500px;
     margin-left: -100px;
   }
 
   .price {
     margin-top: 10px;
+    margin-bottom: 10px;
   }
 
   .info_box button {
@@ -164,7 +165,7 @@ h3 {
     margin-top: 0px;
     width: 60%;
     padding: 8px;
-    margin-inline: auto;
+    margin-left: 10px;
   }
 }
 
@@ -188,9 +189,9 @@ h3 {
   .info_box button {
     display: block;
     margin-top: 20px;
-    width: 20%;
+    width: 60%;
     padding: 8px;
-    margin-inline: auto;
+    margin-left: 10px;
   }
 
   .information {
