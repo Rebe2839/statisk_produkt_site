@@ -19,74 +19,79 @@
         </ul>
       </nav>
     </header>
-    <main>
-      <div class="overskrift">
-        <h2>Apparel</h2>
-        <h3>Sale! Save up to -45%</h3>
+    <div class="overskrift">
+      <h2>Apparel</h2>
+      <h3>Sale! Save up to -45%</h3>
+    </div>
+    <div class="top_grid">
+      <div class="brand">
+        <form>
+          <label>
+            <select name="brand" id="brand">
+              <option>Brand</option>
+              <option>Nike</option>
+              <option>Puma</option>
+            </select>
+          </label>
+        </form>
+      </div>
+      <div class="subcategory">
+        <form>
+          <label>
+            <select name="subcategory" id="subcategory">
+              <option>Subcategory</option>
+              <option>T-shirts</option>
+              <option>Bags</option>
+            </select>
+          </label>
+        </form>
       </div>
 
-      <div class="top_grid">
-        <div class="brand">
-          <form>
-            <label>
-              <select name="brand" id="brand">
-                <option>Brand</option>
-                <option>Nike</option>
-                <option>Puma</option>
-              </select>
-            </label>
-          </form>
-        </div>
-        <div class="subcategory">
-          <form>
-            <label>
-              <select name="subcategory" id="subcategory">
-                <option>Subcategory</option>
-                <option>T-shirts</option>
-                <option>Bags</option>
-              </select>
-            </label>
-          </form>
-        </div>
-
-        <div class="gender">
-          <form>
-            <label>
-              <select name="gender" id="gender">
-                <option>Gender</option>
-                <option>Men</option>
-                <option>Women</option>
-                <option>Unisex</option>
-              </select>
-            </label>
-          </form>
-        </div>
-
-        <div class="color">
-          <form>
-            <label>
-              <select name="color" id="color">
-                <option>Color</option>
-                <option>Blue</option>
-                <option>Black</option>
-                <option>White</option>
-              </select>
-            </label>
-          </form>
-        </div>
+      <div class="gender">
+        <form>
+          <label>
+            <select name="gender" id="gender">
+              <option>Gender</option>
+              <option>Men</option>
+              <option>Women</option>
+              <option>Unisex</option>
+            </select>
+          </label>
+        </form>
       </div>
 
-      <div class="grid_1-1-1-1">
-        <div class="product">
+      <div class="color">
+        <form>
+          <label>
+            <select name="color" id="color">
+              <option>Color</option>
+              <option>Blue</option>
+              <option>Black</option>
+              <option>White</option>
+            </select>
+          </label>
+        </form>
+      </div>
+    </div>
+    <main class="grid_1-1-1-1">
+      <template id="productTemplate">
+        <article class="product">
           <a href="product.html">
             <img class="item1" src="https://kea-alt-del.dk/t7/images/webp/640/1163.webp" alt="Sahara Team India Fanwear Round Neck Jersey" />
           </a>
+
           <h4>Sahara Team India Fanwear Round Neck Jersey</h4>
-          <p class="type">Nike | T-shirts</p>
-          <p>895,00 DKK</p>
-          <a href="product.html">Read more</a>
-        </div>
-        <div class="product2">
+          <p><span class="brand">Nike</span> | <span class="type">T-shirts</span></p>
+          <p><span class="price_discount"> 1595,00</span> DKK</p>
+          <div class="discount">
+            <p><span class="price"> 895,00 DKK</span>DKK</p>
+            <p><span class="procent">28</span> %</p>
+          </div>
+        </article>
+      </template>
+
+      <!---
+        <article class="product onSale">
           <a href="product.html">
             <img class="item2" src="https://kea-alt-del.dk/t7/images/webp/640/1164.webp" alt="Sahara Team India Fanwear Round Neck Jersey" />
           </a>
@@ -98,9 +103,9 @@
             <p>-28%</p>
           </div>
           <a href="product.html">Read more</a>
-        </div>
+        </article>
 
-        <div class="product3">
+        <article class="product soldOut onSale">
           <div class="container">
             <a href="product.html">
               <img class="item3" src="https://kea-alt-del.dk/t7/images/webp/640/1165.webp" alt="Mean Team India Cricket Jersey" />
@@ -117,8 +122,8 @@
             <p>-45%</p>
           </div>
           <a href="product.html">Read more</a>
-        </div>
-        <div class="product4">
+        </article>
+        <article class="product soldOut">
           <div class="container">
             <a href="product.html">
               <img class="item4" src="https://kea-alt-del.dk/t7/images/webp/640/1525.webp" alt="Deck Navy Blue Backpack" />
@@ -131,64 +136,11 @@
           <p class="type">Puma | Backpacks</p>
           <p>1299,00 DKK</p>
           <a href="product.html">Read more</a>
-        </div>
-        <div class="product">
-          <a href="product.html">
-            <img class="item1" src="https://kea-alt-del.dk/t7/images/webp/640/1163.webp" alt="Sahara Team India Fanwear Round Neck Jersey" />
-          </a>
-          <h4>Sahara Team India Fanwear Round Neck Jersey</h4>
-          <p class="type">Nike | T-shirts</p>
-          <p>895,00 DKK</p>
-          <a href="product.html">Read more</a>
-        </div>
-        <div class="product2">
-          <a href="product.html">
-            <img class="item2" src="https://kea-alt-del.dk/t7/images/webp/640/1164.webp" alt="Sahara Team India Fanwear Round Neck Jersey" />
-          </a>
-          <h4>Blue T20 Indian Cricket Jersey</h4>
-          <p class="type">Nike | T-shirts</p>
-          <p class="price_discount">1595,00 DKK</p>
-          <div class="discount">
-            <p>1148,40 DKK</p>
-            <p>-28%</p>
-          </div>
-          <a href="product.html">Read more</a>
-        </div>
-
-        <div class="product3">
-          <div class="container">
-            <a href="product.html">
-              <img class="item3" src="https://kea-alt-del.dk/t7/images/webp/640/1165.webp" alt="Mean Team India Cricket Jersey" />
-            </a>
-            <div class="content">
-              <p>Sold out</p>
-            </div>
-          </div>
-          <h4>Mean Team India Cricket Jersey</h4>
-          <p class="type">Nike | T-shirts</p>
-          <p class="price_discount">2495,00 DKK</p>
-          <div class="discount">
-            <p>1372,25 DKK</p>
-            <p>-45%</p>
-          </div>
-          <a href="product.html">Read more</a>
-        </div>
-        <div class="product4">
-          <div class="container">
-            <a href="product.html">
-              <img class="item4" src="https://kea-alt-del.dk/t7/images/webp/640/1525.webp" alt="Deck Navy Blue Backpack" />
-            </a>
-            <div class="content">
-              <p>Sold out</p>
-            </div>
-          </div>
-          <h4>Deck Navy Blue Backpack</h4>
-          <p class="type">Puma | Backpacks</p>
-          <p>1299,00 DKK</p>
-          <a href="product.html">Read more</a>
-        </div>
-      </div>
+        </article>
+  
+        -->
     </main>
     <footer></footer>
+    <script src="js/productlist.js"></script>
   </body>
 </html>

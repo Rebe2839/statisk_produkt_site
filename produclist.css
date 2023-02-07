@@ -6,10 +6,6 @@
   height: auto;
 }
 
-.item3 {
-  filter: contrast(50%);
-}
-
 h2 {
   font-size: 4rem;
 }
@@ -53,6 +49,7 @@ h4 {
   padding-top: 10px;
   padding-bottom: 10px;
 }
+.brand,
 .type {
   color: rgb(93, 93, 93);
   padding-bottom: 10px;
@@ -75,10 +72,7 @@ p {
   font-style: italic;
 }
 
-.product,
-.product2,
-.product3,
-.product4 {
+.product {
   margin: 40px;
 }
 
@@ -98,21 +92,26 @@ p {
   font-weight: 700;
 }
 
-.container {
-  position: relative;
-  max-width: 700px; /* Maximum width */
-  margin: 0 auto; /* Center it */
-}
-
-.container .content {
-  position: absolute; /* Position the background text */
+article.soldOut a::before {
+  content: "Sold out";
+  position: absolute;
   bottom: 0; /* At the bottom. Use top:0 to append it to the top */
   background: rgb(0, 0, 0); /* Fallback color */
   background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
   color: #f1f1f1; /* Grey text */
-  max-width: 300px;
+  max-width: 258px;
   width: 100%; /* Full width */
   padding: 20px; /* Some padding */
+  z-index: 1;
+}
+
+article.soldOut a img {
+  filter: contrast(60%);
+}
+
+article.onSale .discount {
+  display: flex;
+  gap: 40px;
 }
 
 .grid_1-1-1-1 {
