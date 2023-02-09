@@ -11,6 +11,7 @@ function showProducts(products) {
 }
 
 function showProduct(product) {
+  document.querySelector("h2").textContent = product.category;
   //fang template
   const template = document.querySelector("#productTemplate").content;
   //lav en kopi
@@ -40,5 +41,5 @@ function showProduct(product) {
   copy.querySelector(".read_more").setAttribute("href", `product.html?id=${product.id}`);
 
   //appende
-  document.querySelector("main").appendChild(copy);
+  document.querySelector(".template").appendChild(copy);
 }

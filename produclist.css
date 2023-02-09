@@ -1,9 +1,10 @@
-.item1,
-.item2,
-.item3,
-.item4 {
-  width: 300px;
+.item {
+  width: 100%;
   height: auto;
+}
+
+.read_more a:hover {
+  border: 4px solid white;
 }
 
 h2 {
@@ -13,8 +14,7 @@ h2 {
 .overskrift {
   text-align: center;
   padding-top: 40px;
-  background-color: rgb(215, 203, 175);
-  width: 100%;
+  background-color: rgb(237, 233, 217);
   height: 200px;
   grid-column: 1/6;
   grid-row: 1/1;
@@ -23,27 +23,7 @@ h2 {
 .overskrift h3 {
   text-align: center;
   padding-top: 25px;
-}
-
-select {
-  min-width: 200px;
-  margin-top: 20px;
-  margin-left: 10px;
-
-  padding: 10px;
-  font-size: 1rem;
-  border: 2px solid rgb(65, 58, 46);
-  border-radius: 0px;
-  color: rgb(65, 58, 46);
-  height: 45px;
-  background-color: rgb(227, 220, 202);
-}
-
-.top_grid {
-  display: flex;
-  flex-direction: row;
-  grid-column: 1/6;
-  grid-row: 2/2;
+  text-transform: uppercase;
 }
 
 h4 {
@@ -72,7 +52,7 @@ p {
 }
 
 .product {
-  margin: 20px;
+  margin: 40px 20px 20px 20px;
   position: relative;
 }
 
@@ -97,7 +77,7 @@ article.soldOut a::before {
   font-weight: bold;
 
   position: absolute;
-  bottom: 1; /* At the bottom. Use top:0 to append it to the top */
+  bottom: 80%; /* At the bottom. Use top:0 to append it to the top */
   background: rgb(0, 0, 0); /* Fallback color */
   background: rgba(71, 71, 71, 0.45); /* Black background with 0.5 opacity */
   color: rgb(255, 255, 255); /* Grey text */
@@ -118,7 +98,7 @@ article.onSale .discount {
 
 .grid_1-1-1-1 {
   display: grid;
-  gap: 40px;
+  gap: 0px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
@@ -133,10 +113,8 @@ article.onSale .discount {
     display: grid;
     grid-template-columns: 1fr;
   }
-  .product,
-  .product2,
-  .product3,
-  .product4 {
+  .product {
     margin-inline: auto;
+    padding: 5%;
   }
 }

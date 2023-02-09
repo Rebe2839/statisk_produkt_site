@@ -20,11 +20,11 @@ header {
   position: sticky;
   top: 0;
   padding: 1rem 1rem;
-  box-shadow: 0 12px 28px 0 rgb(0 0 0 / 30%);
+  box-shadow: 0 12px 28px 0 rgba(72, 72, 72, 0.1);
   display: flex;
   justify-content: center;
   z-index: 2;
-  background-color: rgb(215, 203, 175);
+  background-color: rgb(237, 233, 217);
 }
 header nav ul {
   display: flex;
@@ -55,7 +55,8 @@ h1 {
 }
 
 footer {
-  background-color: rgb(215, 203, 175);
+  background-color: rgba(215, 203, 175, 0.486);
+
   height: 50px;
   text-align: center;
   padding: 50px;
@@ -76,5 +77,8 @@ footer {
 @media (max-width: 650px) {
   h1 {
     margin-right: 10px;
+  }
+  footer {
+    font-size: 0.9rem;
   }
 }

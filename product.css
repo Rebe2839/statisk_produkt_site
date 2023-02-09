@@ -35,9 +35,9 @@
   gap: 30px;
   flex-direction: column;
 
-  background-color: rgb(215, 203, 175);
+  background-color: rgb(237, 233, 217);
 
-  border-radius: 0px;
+  border: 1px solid rgb(65, 58, 46);
   margin-left: 10%;
   padding: 20px;
   width: 70%;
@@ -78,7 +78,7 @@ select {
   text-transform: uppercase;
 }
 
-.color_text {
+.info_box p {
   font-weight: bold;
 }
 /*
@@ -190,6 +190,7 @@ h3 {
     margin-left: 20px;
     margin-right: 20px;
   }
+
   .info_box button {
     display: block;
     margin-top: 20px;
@@ -216,10 +217,16 @@ h3 {
   }
   .info_box {
     padding: 20px;
-
     height: auto;
     margin-top: 10px;
     margin-left: 20px;
+  }
+
+  p {
+    padding-top: 20px;
+  }
+  select {
+    margin-top: 20px;
   }
   .breadcrumbs {
     display: flex;

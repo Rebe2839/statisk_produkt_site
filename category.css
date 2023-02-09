@@ -11,7 +11,6 @@ h2 {
   list-style-type: none;
   background-color: rgba(215, 203, 175, 0.486);
   padding-bottom: 50px;
-  list-style-position: inside;
   padding: 50px;
   margin-top: 50px;
   margin-bottom: 200px;
@@ -29,6 +28,7 @@ h2 {
 
 .categories a {
   font-size: 2rem;
+  border-bottom: 1px solid rgb(65, 58, 46);
 }
 .categories a:hover {
   font-style: italic;
@@ -46,12 +46,12 @@ h2 {
 
 @media (max-width: 650px) {
   .categories a {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 
   .categories {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 0px;
+    gap: 20px;
   }
 }
