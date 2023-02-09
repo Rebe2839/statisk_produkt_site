@@ -1,4 +1,7 @@
-fetch("https://kea-alt-del.dk/t7/api/products/1164")
+const urlParams = new URLSearchParams(window.location.search);
+const id = urlParams.get("id");
+
+fetch("https://kea-alt-del.dk/t7/api/products/" + id)
   .then((response) => response.json())
   .then((data) => showProduct(data));
 
@@ -7,6 +10,7 @@ function showProduct(product) {
   document.querySelector(".info_box h3").textContent = product.productdisplayname;
   document.querySelector(".info_box .brand").textContent = product.brandname;
   document.querySelector(".info_box .type").textContent = product.articletype;
+  document.querySelector(".info_box .color").textContent = product.basecolour;
   document.querySelector("img").src = `https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp`;
   document.querySelector(".breadcrumbs .name").textContent = product.productdisplayname;
   document.querySelector(".breadcrumbs .category").textContent = product.category;

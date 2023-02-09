@@ -19,12 +19,13 @@
         </ul>
       </nav>
     </header>
+
     <div class="overskrift">
       <h2>Apparel</h2>
       <h3>Sale! Save up to -45%</h3>
     </div>
     <div class="top_grid">
-      <div class="brand">
+      <div class="brand_top">
         <form>
           <label>
             <select name="brand" id="brand">
@@ -35,7 +36,7 @@
           </label>
         </form>
       </div>
-      <div class="subcategory">
+      <div class="subcategory_top">
         <form>
           <label>
             <select name="subcategory" id="subcategory">
@@ -47,7 +48,7 @@
         </form>
       </div>
 
-      <div class="gender">
+      <div class="gender_top">
         <form>
           <label>
             <select name="gender" id="gender">
@@ -60,7 +61,7 @@
         </form>
       </div>
 
-      <div class="color">
+      <div class="color_top">
         <form>
           <label>
             <select name="color" id="color">
@@ -76,15 +77,15 @@
     <main class="grid_1-1-1-1">
       <template id="productTemplate">
         <article class="product">
-          <a href="product.html">
+          <a class="read_more" href="product.html">
             <img class="item1" src="https://kea-alt-del.dk/t7/images/webp/640/1163.webp" alt="Sahara Team India Fanwear Round Neck Jersey" />
           </a>
 
           <h4>Sahara Team India Fanwear Round Neck Jersey</h4>
           <p><span class="brand">Nike</span> | <span class="type">T-shirts</span></p>
-          <p><span class="price_discount"> 1595,00</span> DKK</p>
+          <p><span class="price"> 1595,00</span> DKK</p>
           <div class="discount">
-            <p><span class="price"> 895,00 DKK</span>DKK</p>
+            <p class="price_discount_2"><span class="price_discount"> 895,00</span> DKK</p>
             <p><span class="procent">28</span> %</p>
           </div>
         </article>
@@ -140,7 +141,7 @@
   
         -->
     </main>
-    <footer></footer>
+    <footer>Data used from: https://kea-alt-del.dk/t7/api/sample</footer>
     <script src="js/productlist.js"></script>
   </body>
 </html>
